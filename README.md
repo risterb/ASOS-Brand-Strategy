@@ -23,6 +23,8 @@ This project analyzes a dataset of ~30,800 ASOS products to identify inventory g
 
 ## Key Findings
 
+<img width="1007" height="708" alt="image" src="https://github.com/user-attachments/assets/693872de-6a35-43a4-9b4e-122c6ae41c4c" />
+
 1. Stockout rates across the catalog range between 10–30%, reflecting moderate but persistent availability issues.
 2. Lost revenue is highly concentrated a small group of premium brands accounts for a disproportionate share of missed sales due to stockouts.
 3. Top revenue-loss offenders include 
