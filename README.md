@@ -13,45 +13,45 @@ This project analyzes a dataset of ~30,800 ASOS products to identify inventory g
 ---
 
 ## Methodology
-1. **Data Cleaning** — Identified and handled 18 fully null rows across the dataset.
-2. **Stockout Quantification** — Parsed the `size` column to calculate a stockout count and stockout rate per product (proportion of sizes listed as "Out of stock").
-3. **Lost Revenue Estimation** — Approximated lost revenue per product as `price × stockout_count`, treating each unavailable size as a missed sale.
-4. **Brand-Level Aggregation** — Grouped metrics by brand (filtered to brands with >10 products) to compare average price, average stockout rate, and total lost revenue.
-5. **Strategic Segmentation** — Visualized brands on a price vs. stockout rate scatter plot, with bubble size representing lost revenue, to identify high-priority brands.
+1. Data Cleaning: Identified and handled 18 fully null rows across the dataset.
+2. Stockout Quantification: Parsed the `size` column to calculate a stockout count and stockout rate per product (proportion of sizes listed as "Out of stock").
+3. Lost Revenue Estimation: Approximated lost revenue per product as `price × stockout_count`, treating each unavailable size as a missed sale.
+4. Brand-Level Aggregation: Grouped metrics by brand (filtered to brands with >10 products) to compare average price, average stockout rate, and total lost revenue.
+5. Strategic Segmentation: Visualized brands on a price vs. stockout rate scatter plot, with bubble size representing lost revenue, to identify high-priority brands.
 
 ---
 
 ## Key Findings
 
-- **Stockout rates** across the catalog range between 10–30%, reflecting moderate but persistent availability issues.
-- **Lost revenue is highly concentrated** — a small group of premium brands accounts for a disproportionate share of missed sales due to stockouts.
-- **Top revenue-loss offenders** include Barbour (up to £1,971 per product), AllSaints (£1,914), and Topshop (£1,820), driven by a combination of high prices and high stockout counts.
-- **Premium brands with high stockout rates** cluster in the high-risk quadrant of the brand strategy matrix, making them the clearest targets for inventory intervention.
-- **Low-price brands** contribute minimally to overall lost revenue, suggesting inventory resources are better directed elsewhere.
+1. Stockout rates across the catalog range between 10–30%, reflecting moderate but persistent availability issues.
+2. Lost revenue is highly concentrated a small group of premium brands accounts for a disproportionate share of missed sales due to stockouts.
+3. Top revenue-loss offenders include 
+4. Premium brands with high stockout rates cluster in the high-risk quadrant of the brand strategy matrix, making them the clearest targets for inventory intervention.
+5. Low-price brands contribute minimally to overall lost revenue, suggesting inventory resources are better directed elsewhere.
 
 ---
 
 ## Recommendations
 
-### High-Price, High-Stockout Brands *(Highest Priority)*
+### High-Price, High-Stockout Brands
 These brands offer the greatest revenue recovery potential.
 - Increase safety stock levels for top-selling SKUs.
 - Shorten replenishment cycles to reduce the window of unavailability.
 - Improve demand forecasting for high-value products, especially across size runs.
 
-### High-Stockout, Low-Price Brands *(Supply Chain Review)*
+### High-Stockout, Low-Price Brands
 Elevated stockout rates regardless of price may signal operational inefficiencies rather than demand spikes.
 - Review supplier lead times and reliability.
 - Evaluate reorder thresholds and inventory policies.
 - Investigate whether warehouse or distribution bottlenecks are contributing to stockouts.
 
-### Low-Stockout Brands *(Maintain & Monitor)*
+### Low-Stockout Brands
 These brands show inventory levels well-aligned with demand.
 - Maintain current forecasting and replenishment practices.
 - Monitor stockout trends to catch early signs of deterioration.
 
 ### Ongoing Monitoring
-- Track **stockout rate by brand** as a standing KPI.
+- Track stockout rate by brand as a standing KPI.
 - Set automated alerts for brands exceeding acceptable stockout thresholds.
 - Review lost revenue metrics periodically to identify emerging risks before they escalate.
 
