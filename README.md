@@ -1,7 +1,7 @@
 # ASOS Product & Stockout Analysis
 
 ## Overview
-This project analyzes a dataset of ~30,800 ASOS products to identify inventory gaps and quantify revenue lost due to stockouts. By examining size availability across brands, the analysis surfaces which brands represent the greatest opportunity for revenue recovery through better inventory management.
+This project analyzes a dataset of approximately 30,800 ASOS products to identify inventory gaps and quantify revenue lost due to stockouts. By examining size availability across brands, the analysis surfaces which brands represent the greatest opportunity for revenue recovery through better inventory management.
 
 ---
 
@@ -27,7 +27,7 @@ This project analyzes a dataset of ~30,800 ASOS products to identify inventory g
 
 1. Stockout rates across the catalog range between 10–30%, reflecting moderate but persistent availability issues.
 2. Lost revenue is highly concentrated a small group of premium brands accounts for a disproportionate share of missed sales due to stockouts.
-3. Top revenue-loss offenders include 
+3. Top revenue-loss offenders include Wonderbra, Mango and Naked driven by a combination of high prices and lagging stock replenishment cycles. 
 4. Premium brands with high stockout rates cluster in the high-risk quadrant of the brand strategy matrix, making them the clearest targets for inventory intervention.
 5. Low-price brands contribute minimally to overall lost revenue, suggesting inventory resources are better directed elsewhere.
 
